@@ -9,7 +9,6 @@ class AgendaService {
       receiveTimeout: const Duration(seconds: 5),
     ),
   );
-  //final Dio _dio = Dio(BaseOptions(baseUrl: 'http://10.0.2.2:8000/api'));
 
   Future<List<Agenda>> getAll() async {
     final response = await _dio.get('/agenda');
